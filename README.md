@@ -1,4 +1,4 @@
-# AutoOllamaCoder
+# AutoOllamaCoder - Local Automated Code Generation and Execution with Error Correction
 ```python
 import ollama
 import json
@@ -123,11 +123,10 @@ if __name__ == "__main__":
     main()
 ```
 
-    Enter a prompt:  Can you create Python code to generate data and run a matrix completion algorithm on it? Include code to install any Python packages you need using exclamation point syntax. The environment is a Jupyter Notebook.
+#    Enter a prompt:  Can you create Python code to generate data and run a matrix completion algorithm on it? Include code to install any Python packages you need using exclamation point syntax. The environment is a Jupyter Notebook.
 
 
     
-    6.734050750732422
     Here's an example of how to generate a matrix, complete missing entries using the Alternating Least Squares (ALS) algorithm, and visualize the results in a Jupyter Notebook.
     
     First, let's install the necessary packages:
@@ -213,10 +212,7 @@ if __name__ == "__main__":
     
     Note that we used `KNNImputer` from scikit-learn to impute missing values and Alternating Least Squares (ALS) algorithm. We also demonstrated the use of Singular Value Decomposition (SVD) for matrix completion as an alternative approach.
     
-    In a real-world scenario, you may need to fine-tune parameters such as the number of neighbors (`n_neighbors`) or the rank (`k`) in SVD based on your specific data and performance metrics.127.29977321624756
-    750
-    5.891605154126667
-    2
+    In a real-world scenario, you may need to fine-tune parameters such as the number of neighbors (`n_neighbors`) or the rank (`k`) in SVD based on your specific data and performance metrics.
     EXECUTE GENERATED SHELL CODE
     pip install numpy pandas scikit-learn matplotlib ipywidgets
     Requirement already satisfied: numpy in /opt/anaconda3/lib/python3.11/site-packages (1.26.4)
@@ -436,8 +432,7 @@ if __name__ == "__main__":
      [0. 0. 0. ... 0. 0. 0.]
      [0. 0. 0. ... 0. 0. 0.]
      [0. 0. 0. ... 0. 3. 0.]]
-    EXCEPTION
-    40.13823890686035
+#    EXCEPTION
     The issue is that you're missing an import statement for seaborn, which is used by `sns`. Here's the corrected code:
     
     ```python
@@ -513,11 +508,8 @@ if __name__ == "__main__":
     print("\nMean Squared Error (SVD):", mse_svd)
     ```
     
-    Just add `import seaborn as sns` at the top of your code to fix the issue. Now you should be able to run it without any errors!107.20564913749695
-    635
-    5.923195327007243
-    1
-    EXECUTE GENERATED CODE
+    Just add `import seaborn as sns` at the top of your code to fix the issue. Now you should be able to run it without any errors!
+#    EXECUTE GENERATED CODE
     
     
     import numpy as np
