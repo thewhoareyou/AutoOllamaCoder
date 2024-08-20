@@ -213,7 +213,7 @@ if __name__ == "__main__":
     Note that we used `KNNImputer` from scikit-learn to impute missing values and Alternating Least Squares (ALS) algorithm. We also demonstrated the use of Singular Value Decomposition (SVD) for matrix completion as an alternative approach.
     
     In a real-world scenario, you may need to fine-tune parameters such as the number of neighbors (`n_neighbors`) or the rank (`k`) in SVD based on your specific data and performance metrics.
-    EXECUTE GENERATED SHELL CODE
+    #EXECUTE GENERATED SHELL CODE
     pip install numpy pandas scikit-learn matplotlib ipywidgets
     Requirement already satisfied: numpy in /opt/anaconda3/lib/python3.11/site-packages (1.26.4)
     Requirement already satisfied: pandas in /opt/anaconda3/lib/python3.11/site-packages (2.1.4)
@@ -330,10 +330,10 @@ if __name__ == "__main__":
     Downloading uri_template-1.3.0-py3-none-any.whl (11 kB)
     Installing collected packages: webcolors, uri-template, fqdn, isoduration
     Successfully installed fqdn-1.5.1 isoduration-20.11.0 uri-template-1.3.0 webcolors-24.8.0
-    EXECUTE GENERATED CODE
+    #EXECUTE GENERATED CODE
     
     
-    EXECUTE GENERATED CODE
+    #EXECUTE GENERATED CODE
     
     
     import numpy as np
@@ -622,8 +622,7 @@ if __name__ == "__main__":
 
     
     Mean Squared Error: 1.639
-    EXCEPTION
-    107.61305212974548
+#    EXCEPTION
     The issue is that `svds` is a function from the `scipy.sparse.linalg` module, but you've imported it as `from scipy.sparse.linalg import svds`, which makes it accessible directly.
     
     However, in your original code, you've imported `svds` with `from scipy.sparse.linalg import svds`. The correct way to import `svds` is by importing the entire module and then using it directly:
@@ -708,15 +707,12 @@ if __name__ == "__main__":
     print("\nMean Squared Error (SVD):", mse_svd)
     ```
     
-    Just make sure you have the necessary libraries installed (`numpy`, `sklearn`, `matplotlib`, `seaborn`, `scipy`).125.47511982917786
-    712
-    5.674431719764991
-    2
-    EXECUTE GENERATED CODE
+    Just make sure you have the necessary libraries installed (`numpy`, `sklearn`, `matplotlib`, `seaborn`, `scipy`).
+#    EXECUTE GENERATED CODE
     
     
     from scipy.sparse.linalg import svds
-    EXECUTE GENERATED CODE
+#    EXECUTE GENERATED CODE
     
     
     import numpy as np
